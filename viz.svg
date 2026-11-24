@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="478" viewBox="0 0 760 478" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="476.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Valid Sudoku — 27 no-duplicate claims, one pass</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Is the FILLED PART legal? (Solvability not asked.) Each digit makes three claims:</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">unique in its row, its column, and its 3×3 box.</text>
+<text x="24.0" y="122.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="600">top-left box</text>
+<rect x="24.0" y="130.0" width="44.0" height="30.0" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="46.0" y="150.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">5</text>
+<rect x="70.0" y="130.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="150.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">3</text>
+<rect x="116.0" y="130.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="138.0" y="150.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">·</text>
+<rect x="24.0" y="162.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="182.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">6</text>
+<rect x="70.0" y="162.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="182.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">·</text>
+<rect x="116.0" y="162.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="138.0" y="182.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">·</text>
+<rect x="24.0" y="194.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="214.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">·</text>
+<rect x="70.0" y="194.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="214.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">9</text>
+<rect x="116.0" y="194.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="138.0" y="214.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">8</text>
+<line x1="24.0" y1="240.0" x2="736.0" y2="240.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="260.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="264.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="265.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">One scan with three seen-sets: a digit registers (row, d), (col, d), (box, d) where</text>
+<text x="56.0" y="284.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">box = (r/3, c/3). Any second registration of the same key → invalid.</text>
+<text x="72.0" y="319.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">seen sets</text>
+<rect x="84.0" y="300.0" width="171.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="169.5" y="319.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">row 0 → {5, 3, 7}</text>
+<rect x="265.0" y="300.0" width="198.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="364.0" y="319.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">col 0 → {5, 6, 8...}</text>
+<rect x="473.0" y="300.0" width="261.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="603.5" y="319.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">box (0,0) → {5, 3, 6, 9, 8}</text>
+<line x1="24.0" y1="344.0" x2="736.0" y2="344.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="364.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="368.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="369.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">81 cells × 3 claims — O(1) work total. The box index formula (r/3)*3 + c/3 is the</text>
+<text x="56.0" y="388.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">only line anyone gets wrong.</text>
+<text x="72.0" y="423.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">rule</text>
+<rect x="84.0" y="404.0" width="342.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="255.0" y="423.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">three keys per digit → row, col, box</text>
+<text x="380.0" y="460.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
